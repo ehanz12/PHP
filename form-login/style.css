@@ -52,21 +52,40 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     background-color: #343a40;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .navbar-left span {
     color: white;
-    font-size: 24px;
+    font-size: 26px;
+    padding-left: 20px;
     font-weight: bold;
+}
+
+.navbar-left > span > a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: .3s all;
+}
+
+.navbar-left > span > a:hover {
+    background-color: #4cae4c;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .navbar-right {
     position: relative;
 }
 
+.navbar-right > .dropdown > span {
+    font-size: 20px;
+}
+
 .navbar-right span {
     color: white;
+    padding-right: 30px;
     cursor: pointer;
 }
 
@@ -75,20 +94,24 @@ button:hover {
     position: absolute;
     background-color: white;
     right: 0;
-    top: 30px;
+    top: 10px;
     min-width: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .5s all;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 10px;
+    padding: 9px;
     text-decoration: none;
     display: block;
+    transition: .5s all;
 }
 
-.dropdown-content a:hover {
+.dropdown-content:hover {
     background-color: #f1f1f1;
+    border-radius: 20px;
+    
 }
 
 .dropdown:hover .dropdown-content {
@@ -102,5 +125,5 @@ button:hover {
 }
 
 .dashboard-content h1 {
-    font-size: 32px;
+    font-size: 42px;
 }

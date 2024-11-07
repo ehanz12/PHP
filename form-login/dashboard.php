@@ -19,6 +19,7 @@ if (!isset($_SESSION['username'])) {
     <nav class="navbar">
         <div class="navbar-left">
             <span>Cafe Saya</span>
+            <span><a href="karyawan.php">Karyawan</a></span>
         </div>
         <div class="navbar-right">
             <div class="dropdown">
