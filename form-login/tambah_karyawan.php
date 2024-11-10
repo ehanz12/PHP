@@ -2,10 +2,10 @@
 include 'koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nik = $_POST['nik'];
-    $nama = $_POST['nama'];
+    $nik = htmlspecialchars( $_POST['nik']);
+    $nama = htmlspecialchars( $_POST['nama']);
     $jabatan = $_POST['jabatan'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password = htmlspecialchars(password_hash($_POST['password'], PASSWORD_DEFAULT));
     $penjualan = 40; // Default penjualan
 
     $sql = "INSERT INTO karyawan (nik, nama, jabatan, password, penjualan) VALUES (?, ?, ?, ?, ?)";

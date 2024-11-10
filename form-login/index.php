@@ -3,9 +3,9 @@ session_start();
 $conn = new mysqli('localhost', 'root', '', 'database');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
+    $username = htmlspecialchars($_POST['username']);
+    $password = htmlspecialchars($_POST['password']);
+    $confirm_password = htmlspecialchars( $_POST['confirm_password']);
 
     // Cek apakah password dan konfirmasi password sama
     if ($password != $confirm_password) {
