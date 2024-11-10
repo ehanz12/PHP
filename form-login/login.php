@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header("Location: dashboard.php");
             exit();
         } else {
-            echo "Password salah!";
+            $error =("Password salah!");
         }
     } else {
          $error =("Username tidak ditemukan!");
