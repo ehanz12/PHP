@@ -35,19 +35,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar - Cafe Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <div class="card-container">
-        <h2>Masukan Akun </h2>
-        <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
-        <form method="POST" action="">
-            <input type="text" name="username" placeholder="Username" required><br>
-            <input type="password" name="password" placeholder="Password" required><br>
-            <input type="password" name="confirm_password" placeholder="Konfirmasi Password" required><br>
-            <button type="submit">Daftar</button>
+<div class="box">
+        <span class="borderLine"></span>
+        <form action="" method="post">
+            <div class="inputBox">
+                <h2>Masuk</h2>
+                <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
+                <input type="text" required="required" name="username">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="password">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Tidak Punya Akun?</a>
+                <a href="index.php">Register Disini!</a>
+            </div>
+            <input type="submit" value="Login">
         </form>
-        <p>Tidak punya akun? <a href="index.php">Register di sini</a></p>
     </div>
 </body>
 </html>
