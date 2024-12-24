@@ -9,7 +9,7 @@
 <body>
     <h1>Bilangan ganjil dan genap</h1>
     <form action="hasil-pemilihan.php" method="POST">
-        Bilangan ? <input type="number" name="bill" required><br>
+        Bilangan  <input type="number" name="bill" required><br>
         <input type="submit" value="Proses">
     </form>
 </body>
