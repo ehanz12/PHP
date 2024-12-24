@@ -1,0 +1,129 @@
+/* Style untuk halaman login */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container{
+    width: 250px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Style untuk navbar di dashboard */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 20px 20px;
+}
+
+.navbar-left span {
+    color: white;
+    font-size: 26px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.navbar-left > span > a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: .3s all;
+}
+
+.navbar-left > span > a:hover {
+    background-color: #4cae4c;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navbar-right {
+    position: relative;
+}
+
+.navbar-right > .dropdown > span {
+    font-size: 20px;
+}
+
+.navbar-right span {
+    color: white;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 10px;
+    min-width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .5s all;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 9px;
+    text-decoration: none;
+    display: block;
+    transition: .5s all;
+}
+
+.dropdown-content:hover {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style untuk isi dashboard */
+.dashboard-content {
+    margin: 50px;
+    text-align: center;
+}
+
+.dashboard-content h1 {
+    font-size: 42px;
+}
